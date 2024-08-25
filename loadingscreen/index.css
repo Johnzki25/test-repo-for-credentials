@@ -1,0 +1,79 @@
+/* Reset and Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('OIG4.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: relative;
+    text-align: center;
+}
+
+#loading-bar-container {
+    position: relative;
+    width: 600px;
+    height: 20px;
+    margin-top: 200px; /* Adjust to match image */
+    margin-bottom: 50px;
+}
+
+#progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #ff4f00, #ff9900);
+    border-radius: 10px;
+    transition: width 3s ease;
+}
+
+#flame {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url('flame_image.png') no-repeat center center/cover;
+    animation: flameAnimation 0.5s infinite ease-in-out;
+}
+
+/* Flame Animation */
+@keyframes flameAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Loading Text */
+#loading-text {
+    color: #ff9e00;
+    font-size: 30px;
+    letter-spacing: 5px;
+    animation: textGlow 1s infinite alternate ease-in-out;
+}
+
+/* Text Glow Animation */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff8c00, 0 0 30px #ffd700;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff8c00, 0 0 30px #ffd700, 0 0 40px #ff4500;
+    }
+}

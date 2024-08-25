@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jion's Porfolio
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./weatherstyle.css">
+    <script src="https://kit.fontawesome.com/9871d8dbea.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-fire"></i>JD Portfolio</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/aboutme.html" class="navbar__links">Sobre mi</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="artandhobbies.html" class="navbar__links">Artes & Hobbies</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/weather.html" class="button">Esta Abajo miralo!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Bueno aqui os dejo un clima app</h1>
+                <h2>para saber si tu cuidad esta en caos</h2>
+                <P>Disfrutad</P> 
+                <button class="main__btn"><a href="/index.html">Home</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/weather.svg" alt="pic" id="main__img">
+            </div>   
+        </div>
+    </div>
+
+    <!-- Services Section-->
+     <div class="services">
+        <h1>Quieres ver el Clima?</h1>
+        
+        <div id="weather-container">
+            <input type="text" id="city" placeholder="Escribe la cuidad">
+            <button onclick="getWeather()">Search</button>
+
+            <img id="weather-icon" alt="Weather Icon"> 
+
+            <div id="temp-div"></div>
+
+            <div id="weather-info"></div>
+
+            <div id="hourly-forecast"></div>
+        </div>
+        <script src="/scripts/weatherscript.js"></script>
+
+     </div>
+
+     <!-- Footer Section-->
+     <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Facebook</a>
+                    <a href="/">Instagram</a>
+                    <a href="/">Linkedin</a>
+                    <a href="/">Youtube</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="" id="footer__logo"><i class="fas fa-fire"></i>Jion3d</a>
+                </div>
+                <p class="website__rights">Jion3d 2024.  All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <div class="fab fa-facebook"></div>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <div class="fab fa-instagram"></div>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <div class="fab fa-linkedin"></div>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <div class="fab fa-youtube"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
